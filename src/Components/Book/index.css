@@ -1,28 +1,36 @@
 .c-book {
-  width: 20%;
-  padding: 16px;
-  background-color: #E1F3F8;
-  margin: 16px;
-  border: 1px solid #9BDAF1;
-  transition: background .2s ease-in-out;
+  width: 15%;
+  padding: 2%;
   cursor: pointer;
 }
-
 .c-book img {
   transition: transform .2s ease-in-out;
 }
-
-.c-book:hover {
-  transition: background .2s ease-in-out;
-  background-color: #9BDAF1;
-}
-
-.c-book:hover img {
+.c-book:hover img, .c-book:focus img {
   transition: transform .2s ease-in-out;
   transform: scale(1.1);
 }
 
+.c-book__title:after {
+  transition: opacity .2s ease-in-out;
+  background-color: black;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+
+.c-book:hover .c-book__title:after, .c-book:focus .c-book__title:after {
+  transition: opacity .2s ease-in-out;
+  opacity: 1;
+}
+
 .c-book__title {
   font-weight: normal;
-  font-size: 20px;
+  font-size: inherit;
+  position: relative;
 }

@@ -1,0 +1,18 @@
+.c-book-info {
+  margin: 2%;
+}
+
+.c-book-info__container {
+  display: flex;
+  margin: 2% 0;
+}
+
+.c-book-info__info {
+  padding-left: 4%;
+  max-width: 800px;
+}
+
+.c-book-info__title {
+  font-weight: normal;
+  margin-top: 0;
+}
