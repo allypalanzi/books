@@ -1,0 +1,28 @@
+.c-book {
+  width: 20%;
+  padding: 16px;
+  background-color: #E1F3F8;
+  margin: 16px;
+  border: 1px solid #9BDAF1;
+  transition: background .2s ease-in-out;
+  cursor: pointer;
+}
+
+.c-book img {
+  transition: transform .2s ease-in-out;
+}
+
+.c-book:hover {
+  transition: background .2s ease-in-out;
+  background-color: #9BDAF1;
+}
+
+.c-book:hover img {
+  transition: transform .2s ease-in-out;
+  transform: scale(1.1);
+}
+
+.c-book__title {
+  font-weight: normal;
+  font-size: 20px;
+}
