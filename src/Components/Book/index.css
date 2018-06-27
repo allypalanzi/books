@@ -1,8 +1,22 @@
 .c-book {
-  width: 15%;
+  width: 40%;
   padding: 2%;
   cursor: pointer;
 }
+
+@media(min-width: 600px) and (max-width: 800px){
+  .c-book {
+    width: 25%;
+  }
+}
+
+@media(min-width: 800px){
+  .c-book {
+    width: 15%;
+  }
+}
+
+
 .c-book img {
   transition: transform .2s ease-in-out;
 }
