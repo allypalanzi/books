@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import { createUrl } from '../../utilities/strings';
 import './index.css';
 
 class Book extends Component {
-  
   render() {
     const { book } = this.props;
     return (
       <Link to={{
-        pathname: `/${createUrl(book.volumeInfo.title)}`,
+        pathname: `/${book.id}}`,
         state: {
           book
         }
