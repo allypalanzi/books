@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Book/ > renders correctly 1`] = `
+<a
+  className="c-book"
+  href="/NaB7oAkon9MC}"
+  onClick={[Function]}
+>
+  <img
+    alt="Statistical Physics cover"
+    src="http://books.google.com/books/content?id=NaB7oAkon9MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  />
+  <h2
+    className="c-book__title"
+  >
+    Statistical Physics
+  </h2>
+</a>
+`;

@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BookInfo/ > renders correctly 1`] = `
+<section
+  className="c-book-info"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <span
+      aria-label="back icon"
+      role="img"
+    >
+      ⬅️
+    </span>
+     Back
+  </a>
+  <div
+    className="c-book-info__container"
+  >
+    <div
+      className="c-book-info__image"
+    >
+      <img
+        alt="Statistical Physics cover"
+        src="http://books.google.com/books/content?id=NaB7oAkon9MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      />
+    </div>
+    <div
+      className="c-book-info__info"
+    >
+      <h2
+        className="c-book-info__title"
+      >
+        Statistical Physics
+      </h2>
+      <p>
+        Lev Davidovich Landau, Evgeniĭ Mikhaĭlovich Lifshit︠s︡, Lev Petrovich Pitaevskiĭ
+      </p>
+      <p>
+        Part 2 of Statistical physics begins with an extensive discussion of the theory of quantum liquids, which was dealt with briefly in the second edition of Statistical physics, by Lev Landau and E.M. Lifshitz; part 1 of Statistical physics is now the third edition of volume 5 of the Course of theoretical physics, by L.D. Landau and E.M. Lifshitz.
+      </p>
+    </div>
+  </div>
+</section>
+`;

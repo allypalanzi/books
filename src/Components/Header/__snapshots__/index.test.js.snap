@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header/ > renders correctly 1`] = `
+<header
+  className="c-header"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <h1>
+      Science Books 
+      <span
+        aria-label="Science emojis, scientist, microscope, books"
+        role="img"
+      >
+        👩‍🔬🔬📚
+      </span>
+    </h1>
+  </a>
+</header>
+`;
