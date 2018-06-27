@@ -13,6 +13,12 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  transition: all .1s ease-in-out;
+}
+
+a:hover {
+  color: #1f4e29;
+  transition: all .1s ease-in-out;
 }
 
 p {
@@ -23,4 +29,24 @@ p {
   max-width: 900px;
   margin: 0 auto;
   padding: 16px;
+}
+
+.p-link {
+  text-decoration: underline;
+}
+
+.p-link:hover, .p-link:focus {
+  text-decoration: none;
+}
+
+.p-button {
+  background: #1f4e29;
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+}
+
+.p-button:hover, .p-button:focus {
+  color: #fff;
+  background: #3b3b3b;
 }

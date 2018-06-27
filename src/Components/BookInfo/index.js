@@ -44,7 +44,7 @@ class BookInfo extends Component {
     } else if (book) {
       return (
         <section className="c-book-info">
-          <Link to="/"><span role="img" aria-label="back icon">⬅️</span> Back</Link>
+          <Link to="/"><span role="img" aria-label="back icon">⬅️</span> <span className="p-link">Back</span></Link>
           <div className="c-book-info__container">
             <div className="c-book-info__image">
               <img src={book.volumeInfo.imageLinks.thumbnail} alt={`${book.volumeInfo.title} cover`}/>
@@ -53,6 +53,7 @@ class BookInfo extends Component {
               <h2 className="c-book-info__title">{book.volumeInfo.title}</h2>
               <p>{book.volumeInfo.authors.join(', ')}</p>
               <p>{book.volumeInfo.description}</p>
+              <a className="p-button" href={book.volumeInfo.previewLink}>Preview</a>
             </div>
           </div>
         </section>

@@ -14,7 +14,12 @@ exports[`<BookInfo/ > renders correctly 1`] = `
     >
       ⬅️
     </span>
-     Back
+     
+    <span
+      className="p-link"
+    >
+      Back
+    </span>
   </a>
   <div
     className="c-book-info__container"
@@ -41,6 +46,12 @@ exports[`<BookInfo/ > renders correctly 1`] = `
       <p>
         Part 2 of Statistical physics begins with an extensive discussion of the theory of quantum liquids, which was dealt with briefly in the second edition of Statistical physics, by Lev Landau and E.M. Lifshitz; part 1 of Statistical physics is now the third edition of volume 5 of the Course of theoretical physics, by L.D. Landau and E.M. Lifshitz.
       </p>
+      <a
+        className="p-button"
+        href="http://books.google.com/books?id=NaB7oAkon9MC&printsec=frontcover&dq=id:NaB7oAkon9MC%7D&hl=&cd=1&source=gbs_api"
+      >
+        Preview
+      </a>
     </div>
   </div>
 </section>
