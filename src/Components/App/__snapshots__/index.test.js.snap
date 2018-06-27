@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App/ > renders correctly 1`] = `
+<section
+  className="l-wrapper"
+>
+  <header
+    className="c-header"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <h1>
+        Science Books 
+        <span
+          aria-label="Science emojis, scientist, microscope, books"
+          role="img"
+        >
+          👩‍🔬🔬📚
+        </span>
+      </h1>
+    </a>
+  </header>
+  <section
+    className="c-books"
+  >
+    <a
+      className="c-book"
+      href="/E7VaaW5hl8kC}"
+      onClick={[Function]}
+    >
+      <img
+        alt="Organophosphorus Chemistry cover"
+        src="http://books.google.com/books/content?id=E7VaaW5hl8kC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      />
+      <h2
+        className="c-book__title"
+      >
+        Organophosphorus Chemistry
+      </h2>
+    </a>
+    <a
+      className="c-book"
+      href="/PZIdcYCCf2kC}"
+      onClick={[Function]}
+    >
+      <img
+        alt="Science and Technology Encyclopedia cover"
+        src="http://books.google.com/books/content?id=PZIdcYCCf2kC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      />
+      <h2
+        className="c-book__title"
+      >
+        Science and Technology Encyclopedia
+      </h2>
+    </a>
+    <a
+      className="c-book"
+      href="/9fv1CAAAQBAJ}"
+      onClick={[Function]}
+    >
+      <img
+        alt="Pseudomonas syringae and related pathogens cover"
+        src="http://books.google.com/books/content?id=9fv1CAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      />
+      <h2
+        className="c-book__title"
+      >
+        Pseudomonas syringae and related pathogens
+      </h2>
+    </a>
+    <a
+      className="c-book"
+      href="/NaB7oAkon9MC}"
+      onClick={[Function]}
+    >
+      <img
+        alt="Statistical Physics cover"
+        src="http://books.google.com/books/content?id=NaB7oAkon9MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      />
+      <h2
+        className="c-book__title"
+      >
+        Statistical Physics
+      </h2>
+    </a>
+    <a
+      className="c-book"
+      href="/pSODAgAAQBAJ}"
+      onClick={[Function]}
+    >
+      <img
+        alt="Spaces of Social Exclusion cover"
+        src="http://books.google.com/books/content?id=pSODAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      />
+      <h2
+        className="c-book__title"
+      >
+        Spaces of Social Exclusion
+      </h2>
+    </a>
+  </section>
+</section>
+`;
