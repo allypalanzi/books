@@ -18,16 +18,16 @@ class Books extends Component {
   }
   
   async getBooks () {
-    const localStorageData = localStorage.getItem("books");
-    if (localStorageData) {
-      this.setState({ books: JSON.parse(localStorageData), loading: false });
+    const sessionStorageData = sessionStorage.getItem("books");
+    if (sessionStorageData) {
+      this.setState({ books: JSON.parse(sessionStorageData), loading: false });
       return;
     }
     try {
       let response = await fetch('https://www.googleapis.com/books/v1/volumes?q=subject%3Ascience&maxResults=20');
       let data = await response.json();
       this.setState({ books: data.items, loading: false });
-      localStorage.setItem("books", JSON.stringify(data.items));
+      sessionStorage.setItem("books", JSON.stringify(data.items));
     } catch(err) {
       console.error('oh no, an error!', err)
       this.setState({ loading: false });
