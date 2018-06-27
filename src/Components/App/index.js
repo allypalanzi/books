@@ -14,15 +14,13 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <React.Fragment>
-          <section className="l-wrapper">
-            <Header />
-            <Switch>
-              <Route exact path={'/'} component={Books} />
-              <Route path={'/:id'} component={BookInfo} />
-            </Switch>
-          </section>
-        </React.Fragment>
+        <section className="l-wrapper">
+          <Header />
+          <Switch>
+            <Route exact path={'/'} component={Books} />
+            <Route path={'/:id'} component={BookInfo} />
+          </Switch>
+        </section>
       </Router>
     );
   }
