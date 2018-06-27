@@ -11,7 +11,8 @@
 ## ✨ Enhancements if more time
 - Pagination to show more books
 - Use pretty URLs for book pages instead of ugly IDs
-- Would probably want to use Sass if the application was bigger so I could have better shared variables for colors, breakpoints, spacing, ect
+- Would probably want to use Sass if the application was bigger so I could have better shared variables for colors, breakpoints, spacing, etc.
+- Add more failsafes if data is missing or the model from the API changes so the app does not crash
 
 ## ❓ Questions
 - What information would be most useful to a user?

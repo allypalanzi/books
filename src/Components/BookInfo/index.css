@@ -3,9 +3,17 @@
 }
 
 .c-book-info__container {
-  display: flex;
   margin: 2% 0;
+  text-align: center;
 }
+
+@media(min-width: 401px) {
+  .c-book-info__container {
+    display: flex;
+    text-align: left;
+  }
+}
+
 
 .c-book-info__info {
   padding-left: 4%;
