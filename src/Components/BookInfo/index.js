@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import Loader from '../Loader';
 import './index.css';
 
+/*
+* A BookInfo component renders information about a book in two ways: either by taking the ID from the url and calling
+* the google api, or by being passed props from the component that links to the BookInfo component.
+*/
+
 class BookInfo extends Component {
   constructor(props) {
     super(props);
@@ -53,7 +58,7 @@ class BookInfo extends Component {
         </section>
       );
     } else {
-      return <p>oh no</p>
+      return <p>This book could not be found.</p>
     }
   }
 }

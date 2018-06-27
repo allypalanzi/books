@@ -6,6 +6,11 @@ import Header from '../Header';
 import './index.css';
 
 class App extends Component {
+  componentWillMount() {
+    // clear local storage on first load to make sure
+    // we have fresh data for each session
+    localStorage.clear();
+  }
   render() {
     return (
       <Router>

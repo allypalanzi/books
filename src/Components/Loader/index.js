@@ -1,12 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './index.css';
 
-class Loader extends Component {
-  
-  
-  render() {
-    return <div className="c-loader" />
-  }
-}
+/*
+* A loader component renders a loading spinner
+*/
+const Loader = props => <div className="c-loader" />;
 
 export default Loader;
