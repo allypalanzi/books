@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Loader from '../Loader';
+import { getBook } from '../../services';
 import './index.css';
 
 /*
@@ -16,11 +17,10 @@ class BookInfo extends Component {
     };
   }
   
-  async getBook(id) {
+  async getSingleBook(id) {
     try {
-      let response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=id%3A${id}`);
-      let data = await response.json();
-      this.setState({ book: data.items[0], loading: false });
+      let data = await getBook(id);
+      this.setState({ book: data, loading: false });
     } catch(err) {
       console.error('oh no, an error!', err)
       this.setState({ loading: false });
@@ -32,7 +32,7 @@ class BookInfo extends Component {
       this.setState({ book: this.props.location.state.book, loading: false });
       return;
     } else {
-      this.getBook(this.props.match.params.id);
+      this.getSingleBook(this.props.match.params.id);
     }    
   }
   

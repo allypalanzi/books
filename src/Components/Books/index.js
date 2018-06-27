@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Book from '../Book';
 import Loader from '../Loader';
+import { getBooks } from '../../services';
 import './index.css';
 
 
@@ -17,17 +18,16 @@ class Books extends Component {
     };
   }
   
-  async getBooks () {
+  async getAllBooks () {
     const sessionStorageData = sessionStorage.getItem("books");
     if (sessionStorageData) {
       this.setState({ books: JSON.parse(sessionStorageData), loading: false });
       return;
     }
     try {
-      let response = await fetch('https://www.googleapis.com/books/v1/volumes?q=subject%3Ascience&maxResults=20');
-      let data = await response.json();
-      this.setState({ books: data.items, loading: false });
-      sessionStorage.setItem("books", JSON.stringify(data.items));
+      const data = await getBooks();
+      this.setState({ books: data, loading: false });
+      sessionStorage.setItem("books", JSON.stringify(data));
     } catch(err) {
       console.error('oh no, an error!', err)
       this.setState({ loading: false });
@@ -35,7 +35,7 @@ class Books extends Component {
   }
   
   componentWillMount() {
-    this.getBooks();
+    this.getAllBooks();
   }
   
   render() {

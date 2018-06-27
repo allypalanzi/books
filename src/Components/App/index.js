@@ -6,11 +6,6 @@ import Header from '../Header';
 import './index.css';
 
 class App extends Component {
-  componentWillMount() {
-    // clear session storage on first load to make sure
-    // we have fresh data if a user reloads the app
-    sessionStorage.clear();
-  }
   render() {
     return (
       <Router>
