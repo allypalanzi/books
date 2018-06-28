@@ -2,9 +2,9 @@
 
 👋 Hello! This app uses [create react app](https://github.com/facebook/create-react-app). You should be able to get it going with a `yarn install` and then a `yarn start`. 🤞
 
-Every component used within the app is in the `Components` directory. You'll find each components test and styles in there as well.
+Every component used within the app is in the `Components` directory. You'll find each component's test and styles in there as well.
 
-`index.js` is the main entry point for the application where everything is initalized. 
+`index.js` is the main entry point for the application where everything is initialized. 
 
 `services.js` includes every service used to call the Google Books API, there are two functions in there:
 - `getBooks()` which will get 20 science books from the API
