@@ -55,7 +55,7 @@ class Books extends Component {
       );
     } else {
       return (
-        <p>Oh no! An error has occured. Please try again later.</p>
+        <p className="test-error">Oh no! An error has occured. Please try again later.</p>
       )
     }
   }
