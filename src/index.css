@@ -1,5 +1,6 @@
 /* Non-component specific styles */
 
+/* Base styles */
 body {
   margin: 0;
   padding: 0;
@@ -7,7 +8,7 @@ body {
   color: #3b3b3b;
   font-size: 16px;
   font-weight: normal;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-family: Georgia,serif;
 }
 
 a {
@@ -25,12 +26,14 @@ p {
   line-height: 1.4;
 }
 
+/* Layout styles */
 .l-wrapper {
   max-width: 900px;
   margin: 0 auto;
   padding: 16px;
 }
 
+/* Pattern styles */
 .p-link {
   text-decoration: underline;
 }
@@ -49,4 +52,10 @@ p {
 .p-button:hover, .p-button:focus {
   color: #fff;
   background: #3b3b3b;
+}
+
+.p-svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }

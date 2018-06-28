@@ -4,13 +4,22 @@
 
 .c-book-info__container {
   margin: 2% 0;
-  text-align: center;
 }
 
-@media(min-width: 401px) {
+@media(min-width: 600px) {
   .c-book-info__container {
     display: flex;
     text-align: left;
+  }
+  .c-book-info__image {
+    text-align: center;
+  }
+}
+
+@media(max-width: 600px) {
+  .c-book-info__image {
+    text-align: center;
+    margin: 4% 0;
   }
 }
 
@@ -22,4 +31,8 @@
 .c-book-info__title {
   font-weight: normal;
   margin-top: 0;
+}
+
+.c-book-info__link span, .c-book-info__link svg {
+  vertical-align: middle;
 }
