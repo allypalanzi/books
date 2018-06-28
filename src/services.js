@@ -13,7 +13,7 @@ export async function getBook(id) {
   try {
     let response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=id%3A${id}`);
     let data = await response.json();
-    // The single book is returned as an array within items, so lets just get the First
+    // The single book is returned as an array within items, so lets just get the first
     // TODO: error handling if there aren't any lol
     return data.items[0];
   } catch(err) {
