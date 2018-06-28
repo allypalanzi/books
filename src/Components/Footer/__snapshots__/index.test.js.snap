@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer/ > renders correctly 1`] = `
+<footer
+  className="c-footer"
+>
+  <p>
+    ©2018, Thanks Google for your Books API
+  </p>
+</footer>
+`;
