@@ -1,5 +1,5 @@
 .c-footer {
-  border-top: 4px solid black;
-  margin: 4% 0;
+  border-top: 4px solid currentColor;
+  margin: 4% 2%;
   text-align: center;
 }

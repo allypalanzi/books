@@ -27,7 +27,7 @@
 
 .c-book__title:after {
   transition: opacity .2s ease-in-out;
-  background-color: black;
+  background-color: #3b3b3b;
   opacity: 0;
   position: absolute;
   width: 100%;
