@@ -103,10 +103,6 @@ exports[`<App/ > renders correctly 1`] = `
   </section>
   <footer
     className="c-footer"
-  >
-    <p>
-      ©2018, Thanks Google for your Books API
-    </p>
-  </footer>
+  />
 </main>
 `;

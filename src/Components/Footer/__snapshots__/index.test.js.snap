@@ -3,9 +3,5 @@
 exports[`<Footer/ > renders correctly 1`] = `
 <footer
   className="c-footer"
->
-  <p>
-    ©2018, Thanks Google for your Books API
-  </p>
-</footer>
+/>
 `;

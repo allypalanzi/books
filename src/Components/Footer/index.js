@@ -2,14 +2,12 @@ import React from 'react';
 import './index.css';
 
 /*
-* A header component renders the application header
+* A Footer component renders the application footer
 */
 
 const Footer = props => {
   return (
-    <footer className="c-footer">
-      <p>©2018, Thanks Google for your Books API</p>
-    </footer>
+    <footer className="c-footer"></footer>
   );
 }
 
